@@ -1,0 +1,35 @@
+.search-wrapper {
+  width: 30rem;
+  height: 4rem;
+  background-color: #1e2a47;
+  display: flex;
+  align-items: center;
+  padding: 0 5px 0 10px;
+  border-radius: 10px;
+}
+
+.search-icon {
+  margin-right: 1rem;
+}
+input {
+  width: 25rem;
+  background-color: #1e2a47;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+input::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
+button {
+  background-color: #0079ff;
+  width: 5rem;
+  height: 3rem;
+  margin-left: 0.5rem;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+}
