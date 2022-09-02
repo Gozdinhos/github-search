@@ -1,0 +1,17 @@
+.header-wrapper {
+  display: flex;
+  width: 30rem;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.switch {
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.switch-image {
+  width: 25px;
+  height: 25px;
+}
