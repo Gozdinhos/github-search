@@ -10,7 +10,10 @@ const Search = () => {
   const [userData, setUserData] = useState<IUser | undefined>()
 
   const searchUser = (username: string) => {
-    getUser(username).then(res => setUserData(res.data))
+    setUserData(undefined)
+    getUser(username)
+      .then(res => setUserData(res.data))
+      .catch((err) => console.log(err))
   };
 
   useEffect(() => {
@@ -25,9 +28,10 @@ const Search = () => {
           onChange={(e) => setSearchText(e.target.value)}
           placeholder="Search Github username..."
         />
-        <button>Search</button>
+        {!userData && <p className="no-results" >No results</p>}
+        <button onClick={() => searchUser(searchText)} >Search</button>
       </div>
-      <UserCard userData={userData} />
+      {userData && <UserCard userData={userData} />}
     </>
   );
 };

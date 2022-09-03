@@ -22,7 +22,7 @@ const UserCard = (props: IUserCard) => {
       <img className="avatar-icon" src={props.userData?.avatar_url} alt="avatar_icon" />
       <div className="user-information">
         <div className="user-card-header">
-          <h1> {props.userData?.name}</h1>
+          <h1> {props.userData?.name ? props.userData?.name : props.userData?.login}</h1>
           <p> {`Joined ${new Date(props.userData?.created_at || "").toLocaleDateString('de-en', { year: "numeric", month: "short", day: "numeric" })}`}  </p>
         </div>
         <h4>{`@${props.userData?.login}`}</h4>
