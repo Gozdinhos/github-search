@@ -47,11 +47,12 @@ const UserCard = (props: IUserCard) => {
           </p>
         </div>
         <h4>{`@${props.userData?.login}`}</h4>
-        <h5>
-          {props.userData?.bio
-            ? props.userData?.bio
-            : "This profile has no bio"}
-        </h5>
+        {props.userData?.bio ? (
+          <h5>props.userData?.bio </h5>
+        ) : (
+          <span className="not-found"> This profile has no bio</span>
+        )}
+
         <div className="about">
           <div className="info">
             <p className="text-secondary">Repos</p>
@@ -69,12 +70,11 @@ const UserCard = (props: IUserCard) => {
         <div className="contact-info">
           <div className="info-section">
             <img src={Location} alt="location_icon" />
-            <p className="text-secondary">
-              {" "}
-              {props.userData?.location
-                ? props.userData?.location
-                : "Not available"}
-            </p>
+            {props.userData?.location ? (
+              <p className="text-secondary">{props.userData?.location} </p>
+            ) : (
+              <span className="text-secondary not-found">Not available</span>
+            )}
           </div>
           <div className="info-section">
             <img src={Twitter} alt="twitter_icon" />
@@ -86,7 +86,7 @@ const UserCard = (props: IUserCard) => {
                 {props.userData?.twitter_username}
               </a>
             ) : (
-              <span className="text-secondary">Not available</span>
+              <span className="text-secondary not-found">Not available</span>
             )}
           </div>
           <div className="info-section">
@@ -96,7 +96,7 @@ const UserCard = (props: IUserCard) => {
                 {props.userData?.blog}
               </a>
             ) : (
-              <span className="text-secondary">Not available</span>
+              <span className="text-secondary not-found">Not available</span>
             )}
           </div>
           <div className="info-section">
@@ -109,7 +109,7 @@ const UserCard = (props: IUserCard) => {
                 {props.userData?.company}
               </a>
             ) : (
-              <span className="text-secondary ">Not available</span>
+              <span className="text-secondary not-found">Not available</span>
             )}
           </div>
         </div>

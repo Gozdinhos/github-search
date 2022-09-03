@@ -1,8 +1,14 @@
 .header-wrapper {
   display: flex;
-  width: 30rem;
+  width: 45rem;
   justify-content: space-between;
   color: #fff;
+  height: 3rem;
+}
+
+.header-text{
+  font-size: 1.5rem;
+
 }
 
 .switch {

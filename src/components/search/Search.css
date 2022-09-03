@@ -1,5 +1,5 @@
 .search-wrapper {
-  width: 30rem;
+  width: 45rem;
   height: 4rem;
   background-color: #1e2a47;
   display: flex;
@@ -11,25 +11,41 @@
 .search-icon {
   margin-right: 1rem;
 }
+
 input {
-  width: 25rem;
+  flex-grow: 1;
   background-color: #1e2a47;
   border: none;
   color: #fff;
   font-size: 16px;
   outline: none;
 }
+
 input::placeholder {
   color: #fff;
   font-size: 16px;
 }
 
 button {
-  background-color: #0079ff;
+  background-color: #3a93fa;
   width: 5rem;
   height: 3rem;
   margin-left: 0.5rem;
   border-radius: 10px;
   color: #fff;
   border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0079ff;
+}
+
+button:active {
+  background-color: #0079ff;
+}
+
+.no-results {
+  color: red;
+
 }

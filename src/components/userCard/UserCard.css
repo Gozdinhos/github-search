@@ -53,10 +53,11 @@
 
 h4 {
   color: #0079ff;
+  height: 2rem;
 }
 
 h5 {
-  color: #c9cedb;
+  color: #fff;
   margin-top: 2rem;
 }
 
@@ -79,4 +80,8 @@ h5 {
 .social:visited {
   color: #fff;
   text-decoration: none;
+}
+
+.not-found {
+  color: rgba(255, 255, 255, 0.757);
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/header/Header";
 import Search from "../components/search/Search";
+import "./Main.css";
 
 const Main = () => {
   return (
