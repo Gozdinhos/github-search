@@ -1,6 +1,33 @@
+:root {
+  --font-color: #fff;
+  --button-color:#fff;
+  --secondary-font-color: rgba(255, 255, 255, 0.757);
+  --app-background-color: #141D2F;
+  --card-background-color: #1E2A47;
+  --accent-color: #0079FF;
+  --accent-hover: #0065d7;
+  --error: rgb(193, 2, 2);
+ 
+}
+
+[data-theme="light"] {
+  --font-color: #2b3442;
+  --button-color:#fff;
+  --secondary-font-color: #697c9a;
+  --app-background-color: #fefefe;
+  --card-background-color: #f6f8ff;
+  --accent-color: #0079FF;
+  --accent-hover: #0065d7;
+  --error: rgb(193, 2, 2);
+}
+
+
+
 .app {
   display: flex;
   justify-content: center;
-  background-color: #141d2f;
+  background-color: var(--app-background-color);
   height: 100vh;
+  transition: all .5s;
+
 }

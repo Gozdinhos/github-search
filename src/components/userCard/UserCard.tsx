@@ -37,13 +37,15 @@ const UserCard = (props: IUserCard) => {
           </h1>
           <p>
             {" "}
-            {`Joined ${new Date(
-              props.userData?.created_at || ""
-            ).toLocaleDateString("de-en", {
-              year: "numeric",
-              month: "short",
-              day: "numeric",
-            })}`}
+            {`Joined ${new Date(props.userData?.created_at || "")
+              .toLocaleDateString("de-en", {
+                year: "numeric",
+                month: "short",
+                day: "numeric",
+              })
+              .toString()
+              .split(".")
+              .join("")}`}
           </p>
         </div>
         <h4>{`@${props.userData?.login}`}</h4>
