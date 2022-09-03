@@ -1,0 +1,68 @@
+.user-card-wrapper {
+  background-color: #1e2a47;
+  display: flex;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  color: #fff;
+  padding: 2rem;
+  width: 45rem;
+}
+
+.avatar-icon {
+  flex: 1;
+  height: 7rem;
+  border-radius: 50%;
+}
+
+.user-information {
+  flex: 3;
+}
+
+.user-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  display: flex;
+  background-color: #141d2f;
+  justify-content: space-around;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  column-gap: 2rem;
+}
+
+.info-section {
+  display: flex;
+  margin-top: 2rem;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+}
+
+h4 {
+  color: #0079ff;
+}
+
+h5 {
+  color: #c9cedb;
+  margin-top: 2rem;
+}
+
+.text-primary {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.text-secondary {
+  font-size: 0.8rem;
+}
