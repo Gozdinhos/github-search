@@ -6,21 +6,24 @@
   color: #fff;
   padding: 2rem;
   width: 45rem;
+  justify-content: space-around;
+
+}
+
+.user-card-wrapper h1 {
+  font-size: 1.5rem;
 }
 
 .avatar-icon {
-  flex: 1;
-  height: 7rem;
+  height: 9rem;
+  width: 9rem;
   border-radius: 50%;
-}
-
-.user-information {
-  flex: 3;
 }
 
 .user-card-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .about {
@@ -40,12 +43,11 @@
 
 .info-section {
   display: flex;
-  margin-top: 2rem;
+  height: 3rem;
+  align-items: center;
 }
 
-img {
-  width: 20px;
-  height: 20px;
+.info-section img {
   margin-right: 1rem;
 }
 
@@ -65,4 +67,16 @@ h5 {
 
 .text-secondary {
   font-size: 0.8rem;
+  text-decoration: none;
+
+}
+
+.social:hover {
+  text-decoration: underline;
+
+}
+
+.social:visited {
+  color: #fff;
+  text-decoration: none;
 }
