@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback } from "react";
 import Location from "../../assets/icon-location.svg";
 import Twitter from "../../assets/icon-twitter.svg";
 import Website from "../../assets/icon-website.svg";
@@ -46,7 +46,7 @@ const UserCard = (props: IUserCard) => {
               .join("")}`}
           </p>
         </div>
-        <h4>{`@${props.userData?.login}`}</h4>
+        <h4 className="login">{`@${props.userData?.login}`}</h4>
         {props.userData?.bio ? (
           <h5>props.userData?.bio </h5>
         ) : (

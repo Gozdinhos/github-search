@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Search.css";
 import SearchIcon from "../../assets/icon-search.svg";
-import axios from "axios";
 import UserCard from "../userCard/UserCard";
 import { getUser, IUser } from "../../service/users";
 
