@@ -1,5 +1,4 @@
 import React, { useCallback, useState } from "react";
-import Moon from "../../assets/icon-moon.svg";
 import Location from "../../assets/icon-location.svg";
 import Twitter from "../../assets/icon-twitter.svg";
 import Website from "../../assets/icon-website.svg";
@@ -26,17 +25,16 @@ const UserCard = (props: IUserCard) => {
         className="avatar-icon"
         src={props.userData?.avatar_url}
         alt="avatar_icon"
+        data-testid="avatar-icon"
       />
       <div className="user-information">
         <div className="user-card-header">
-          <h1>
-            {" "}
+          <h1 data-testid="userdata-name">
             {props.userData?.name
               ? props.userData?.name
               : props.userData?.login}
           </h1>
           <p>
-            {" "}
             {`Joined ${new Date(props.userData?.created_at || "")
               .toLocaleDateString("de-en", {
                 year: "numeric",

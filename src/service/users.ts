@@ -31,11 +31,12 @@ export interface IUser {
     public_gists: number;
     followers: number;
     following: number;
-    created_at: Date;
-    updated_at: Date;
+    created_at: string;
+    updated_at: string;
 }
 
 export const getUser = (username: string) => {
     return axios
         .get<IUser>(`https://api.github.com/users/${username}`)
+        .then(res => res.data)
 }

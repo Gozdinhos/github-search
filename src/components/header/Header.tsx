@@ -20,8 +20,14 @@ const Header = () => {
 
   return (
     <div className="header-wrapper">
-      <p className="header-text">devfinder</p>
-      <div onClick={toggleMode} className="switch">
+      <p data-testid="header-text" className="header-text">
+        devfinder
+      </p>
+      <div
+        data-testid="switch-component"
+        onClick={toggleMode}
+        className="switch"
+      >
         {theme === "dark" ? (
           <>
             <p>LIGHT</p>
